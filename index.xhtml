@@ -1,28 +1,152 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Page</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Data</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="login-container">
-        <h2>Login</h2>
-        <form action="#" method="post">
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required="required" />
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required="required" />
-            </div>
-            <button type="submit" class="login-button">Login</button>
-        </form>
+    <h1>Planets data</h1>
+    <p class="source-info">Data about the planets of our solar system (Planetary facts taken from <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/index.html">Nasa's Planetary Fact Sheet - Metric</a>)</p>
+    
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2"></th>
+                    <th>Name</th>
+                    <th>Mass (10<sup>24</sup>kg)</th>
+                    <th>Diameter (km)</th>
+                    <th>Density (kg/m<sup>3</sup>)</th>
+                    <th>Gravity (m/s<sup>2</sup>)</th>
+                    <th>Length of day (hours)</th>
+                    <th>Distance from Sun (10<sup>6</sup>km)</th>
+                    <th>Mean temperature (°C)</th>
+                    <th>Number of moons</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="4">Terrestrial planets</td>
+                    <td></td>
+                    <td>Mercury</td>
+                    <td>0.330</td>
+                    <td>4,879</td>
+                    <td>5427</td>
+                    <td>4.9</td>
+                    <td>4222.6</td>
+                    <td>57.9</td>
+                    <td>167</td>
+                    <td>0</td>
+                    <td>Closest to the Sun</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Venus</td>
+                    <td>4.87</td>
+                    <td>12,124</td>
+                    <td>5243</td>
+                    <td>8.9</td>
+                    <td>29002.0</td>
+                    <td>108.2</td>
+                    <td>464</td>
+                    <td>0</td>
+                    <td> Hottest Planet </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Earth</td>
+                    <td>5.97</td>
+                    <td>12,756</td>
+                    <td>5514</td>
+                    <td>9.8</td>
+                    <td>24.0</td>
+                    <td>149.6</td>
+                    <td>15</td>
+                    <td>1</td>
+                    <td>Our world</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Mars</td>
+                    <td>0.642</td>
+                    <td>6662</td>
+                    <td>3933</td>
+                    <td>3.7</td>
+                    <td>24.7</td>
+                    <td>227.9</td>
+                    <td>-65</td>
+                    <td>2</td>
+                    <td>The red planet</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">Jovian planets</td>
+                    <td rowspan="2">Gas giants</td>
+                    <td>Jupiter</td>
+                    <td>1898</td>
+                    <td>142,988</td>
+                    <td>1326</td>
+                    <td>23.1</td>
+                    <td>9.9</td>
+                    <td>778.6</td>
+                    <td>-110</td>
+                    <td>67</td>
+                    <td>The largest planet</td>
+                </tr>
+                <tr>
+                    <td>Saturn</td>
+                    <td>568</td>
+                    <td>120,536</td>
+                    <td>687</td>
+                    <td>9.5</td>
+                    <td>10.8</td>
+                    <td>1423.5</td>
+                    <td>-140</td>
+                    <td>62</td>
+                    <td>Second Largest Planet</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Ice giants</td>
+                    <td>Uranus</td>
+                    <td>86.8</td>
+                    <td>51,118</td>
+                    <td>1271</td>
+                    <td>8.7</td>
+                    <td>17.2</td>
+                    <td>2872.5</td>
+                    <td>-195</td>
+                    <td>27</td>
+                    <td>Ice giant</td>
+                </tr>
+                <tr>
+                    <td>Neptune</td>
+                    <td>102</td>
+                    <td>49,528</td>
+                    <td>1638</td>
+                    <td>11.0</td>
+                    <td>16.1</td>
+                    <td>4495.1</td>
+                    <td>-200</td>
+                    <td>14</td>
+                    <td>It is like a Uranus</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Dwarf planets</td>
+                    <td>Pluto</td>
+                    <td>0.0146</td>
+                    <td>2,370</td>
+                    <td>2095</td>
+                    <td>0.7</td>
+                    <td>153.3</td>
+                    <td>5906.4</td>
+                    <td>-225</td>
+                    <td>5</td>
+                    <td>Declassified as a planet in 2006, but this <a href="#">remains controversial</a></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <script src="script.js"></script>
 </body>
-</html>
+</html>  
